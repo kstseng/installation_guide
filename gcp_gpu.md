@@ -28,7 +28,7 @@ gcloud compute ssh instance-1
 gcloud compute scp cudnn-8.0-linux-x64-v7.1.tgz instance-1:/home/davidtseng
 ```
 
---
+---
 
 ### Install CUDA
 
