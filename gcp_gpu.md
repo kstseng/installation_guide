@@ -12,6 +12,8 @@ Tutorial: [在 Google Cloud Platform 上使用 GPU 和安裝深度學習相關�
 * [Install Tensorflow](#install-tensorflow)
 * [Running Jupyter notebooks in your local computer](#running-jupyter-notebooks-in-your-local-computer)
 
+---
+
 #### SSH to Instance
 
 * initialization
