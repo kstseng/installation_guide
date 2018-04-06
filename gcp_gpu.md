@@ -7,14 +7,14 @@
 
 * initialization
 
-```console
+```bash
 ## local
 
 gcloud init
 ```
 * ssh to instance
 
-```console
+```bash
 ## local
 
 gcloud compute ssh instance-1
@@ -156,29 +156,5 @@ print(device_lib.list_local_devices())
 	```
 	
 	then type `localhost:8898` in your browser.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	
 
