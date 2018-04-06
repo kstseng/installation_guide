@@ -53,7 +53,7 @@ source ~/.bashrc
 nvidia-smi
 ```
 
---
+---
 
 ### Install cuDNN
 
@@ -75,7 +75,7 @@ rm -rf ~/cuda
 rm cudnn-9.0-linux-x64-v7.tgz
 ```
 
---
+---
 
 ### Install Anaconda
 
@@ -94,7 +94,7 @@ conda list
 * if `conda: command not found`, add environment variable to ~/.bashrc manually.
 	* `export PATH=/home/davidtseng/anaconda3/bin:$PATH`
 
---
+---
 
 ### Create venv
 
@@ -103,7 +103,7 @@ conda create --name py36 python=3.6 anaconda
 source activate py36
 ```
 
---
+---
 
 ### Install Tensorflow
 
@@ -121,7 +121,7 @@ from tensorflow.python.client import device_lib
 print(device_lib.list_local_devices())
 ```
 
---
+---
 
 ### Running Jupyter notebooks in your local computer
 
