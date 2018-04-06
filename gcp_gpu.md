@@ -1,19 +1,16 @@
 ## Note for GCP GPU
 
-教學文: [在 Google Cloud Platform 上使用 GPU 和安裝深度學習相關套件](https://medium.com/@kstseng/%E5%9C%A8-google-cloud-platform-%E4%B8%8A%E4%BD%BF%E7%94%A8-gpu-%E5%92%8C%E5%AE%89%E8%A3%9D%E6%B7%B1%E5%BA%A6%E5%AD%B8%E7%BF%92%E7%9B%B8%E9%97%9C%E5%A5%97%E4%BB%B6-1b118e291015)
+Tutorial: [在 Google Cloud Platform 上使用 GPU 和安裝深度學習相關套件](https://medium.com/@kstseng/%E5%9C%A8-google-cloud-platform-%E4%B8%8A%E4%BD%BF%E7%94%A8-gpu-%E5%92%8C%E5%AE%89%E8%A3%9D%E6%B7%B1%E5%BA%A6%E5%AD%B8%E7%BF%92%E7%9B%B8%E9%97%9C%E5%A5%97%E4%BB%B6-1b118e291015)
 
 ### Outline
 
 * [SSH to Instance](#ssh-to-instance)
-* [Install CUDA]
-* [Install cuDNN]
-* [Install Anaconda]
-* [Create venv]
+* [Install CUDA](#install-cuda)
+* [Install cuDNN](#install-cudnn)
+* [Install Anaconda](#install-anaconda)
+* [Create venv](#create-venv)
 * [Install Tensorflow](#install-tensorflow)
-* [Running Jupyter notebooks in your local computer]
-
-
-
+* [Running Jupyter notebooks in your local computer](#running-jupyter-notebooks-in-your-local-computer)
 
 #### SSH to Instance
 
