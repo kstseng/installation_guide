@@ -163,7 +163,7 @@ print(device_lib.list_local_devices())
 	```bash
 	## local
 	
-	ssh -N -f -i ~/.ssh/google_compute_engine -L 8898:localhost:8888 davidtseng@<IP-address-of-your-GPU-instance>
+	ssh -N -f -i ~/.ssh/google_compute_engine -L 8898:localhost:8888 <username>@<IP-address-of-your-GPU-instance>
 	```
 	
 	then type `localhost:8898` in your browser.
