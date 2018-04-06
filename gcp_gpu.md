@@ -22,7 +22,7 @@ gcloud compute ssh instance-1
 
 * copy `sth` to remote, ex: cudnn-xxx
 
-```console
+```bash
 ## local
 
 gcloud compute scp cudnn-8.0-linux-x64-v7.1.tgz instance-1:/home/davidtseng
@@ -32,7 +32,7 @@ gcloud compute scp cudnn-8.0-linux-x64-v7.1.tgz instance-1:/home/davidtseng
 
 ### Install CUDA
 
-```
+```bash
 ## remote
 
 # get driver
@@ -57,7 +57,7 @@ nvidia-smi
 
 ### Install cuDNN
 
-```
+```bash
 ## local
 
 # scp package from local to remote
@@ -65,7 +65,7 @@ gcloud compute scp cudnn-9.0-linux-x64-v7.tgz instance-1:/home/davidtseng
 ```
 
 
-```
+```bash
 ## remote
 
 tar xzvf cudnn-9.0-linux-x64-v7.tgz
@@ -81,7 +81,7 @@ rm cudnn-9.0-linux-x64-v7.tgz
 
 [reference](https://www.digitalocean.com/community/tutorials/how-to-install-the-anaconda-python-distribution-on-ubuntu-16-04)
 
-```
+```bash
 ## remote
 
 curl -O https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh
@@ -98,7 +98,7 @@ conda list
 
 ### Create venv
 
-```
+```bash
 conda create --name py36 python=3.6 anaconda
 source activate py36
 ```
@@ -107,7 +107,7 @@ source activate py36
 
 ### Install Tensorflow
 
-```
+```bash
 pip install --upgrade tensorflow-gpu
 ```
 
@@ -127,13 +127,13 @@ print(device_lib.list_local_devices())
 
 1. generate config
 
-	```
+	```bash
 	jupyter notebook --generate-config
 	```
 
 2. add following code into `xxx/.jupyter/jupyter_notebook_config.py`
 
-	```
+	```bash
 	c = get_config()
 	c.IPKernelApp.pylab = 'inline'
 	c.NotebookApp.open_browser = False
@@ -141,7 +141,7 @@ print(device_lib.list_local_devices())
 	```
 3. run `jupyter notebook`
 
-	```
+	```bash
 	## remote
 	
 	jupyter notebook
@@ -149,7 +149,7 @@ print(device_lib.list_local_devices())
 
 4. port fowarding in local
 
-	```
+	```bash
 	## local
 	
 	ssh -N -f -i ~/.ssh/google_compute_engine -L 8898:localhost:8888 davidtseng@<IP-address-of-your-GPU-instance>
