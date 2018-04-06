@@ -2,8 +2,20 @@
 
 教學文: [在 Google Cloud Platform 上使用 GPU 和安裝深度學習相關套件](https://medium.com/@kstseng/%E5%9C%A8-google-cloud-platform-%E4%B8%8A%E4%BD%BF%E7%94%A8-gpu-%E5%92%8C%E5%AE%89%E8%A3%9D%E6%B7%B1%E5%BA%A6%E5%AD%B8%E7%BF%92%E7%9B%B8%E9%97%9C%E5%A5%97%E4%BB%B6-1b118e291015)
 
+### Outline
 
-### SSH to instance
+* [SSH to Instance](#ssh-to-instance)
+* [Install CUDA]
+* [Install cuDNN]
+* [Install Anaconda]
+* [Create venv]
+* [Install Tensorflow](#install-tensorflow)
+* [Running Jupyter notebooks in your local computer]
+
+
+
+
+#### SSH to Instance
 
 * initialization
 
@@ -30,7 +42,7 @@ gcloud compute scp cudnn-8.0-linux-x64-v7.1.tgz instance-1:/home/davidtseng
 
 ---
 
-### Install CUDA
+#### Install CUDA
 
 ```bash
 ## remote
@@ -55,7 +67,7 @@ nvidia-smi
 
 ---
 
-### Install cuDNN
+#### Install cuDNN
 
 ```bash
 ## local
@@ -77,7 +89,7 @@ rm cudnn-9.0-linux-x64-v7.tgz
 
 ---
 
-### Install Anaconda
+#### Install Anaconda
 
 [reference](https://www.digitalocean.com/community/tutorials/how-to-install-the-anaconda-python-distribution-on-ubuntu-16-04)
 
@@ -96,7 +108,7 @@ conda list
 
 ---
 
-### Create venv
+#### Create venv
 
 ```bash
 conda create --name py36 python=3.6 anaconda
@@ -105,7 +117,7 @@ source activate py36
 
 ---
 
-### Install Tensorflow
+#### Install Tensorflow
 
 ```bash
 pip install --upgrade tensorflow-gpu
@@ -123,7 +135,7 @@ print(device_lib.list_local_devices())
 
 ---
 
-### Running Jupyter notebooks in your local computer
+#### Running Jupyter notebooks in your local computer
 
 1. generate config
 
