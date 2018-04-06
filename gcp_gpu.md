@@ -10,7 +10,7 @@ Tutorial: [在 Google Cloud Platform 上使用 GPU 和安裝深度學習相關�
 * [Install Anaconda](#install-anaconda)
 * [Create venv](#create-venv)
 * [Install Tensorflow](#install-tensorflow)
-* [Running Jupyter notebooks in your local computer](#running-jupyter-notebooks-in-your-local-computer)
+* [Running Jupyter notebook in your local computer](#running-jupyter-notebook-in-your-local-computer)
 
 ---
 
@@ -134,7 +134,7 @@ print(device_lib.list_local_devices())
 
 ---
 
-#### Running Jupyter notebooks in your local computer
+#### Running Jupyter notebook in your local computer
 
 1. generate config
 
